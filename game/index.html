@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Quiet Courier — a stealth game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0c18; height: 100%; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; font-family: monospace, sans-serif; }
+  #wrap { width: 1280px; max-width: 100vw; }
+  canvas { display: block; width: 100%; height: auto; background: #141828; cursor: crosshair; }
+  #note { display: none; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="note">The Quiet Courier — an original stealth game. No network, no files beyond this folder. WASD move, Shift sneak, click throws a pebble.</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
